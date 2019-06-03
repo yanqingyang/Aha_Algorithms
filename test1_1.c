@@ -15,7 +15,8 @@ int main()
 
 
     printf("The scores array is : ");
-    for(i=0; i<=10; i++)
+    //for(i=0; i<=10; i++)
+    for(i=10; i>=0; i--)
     {
         for(j=1; j<=a[i];j++)
             printf("%d ",i);
