@@ -17,16 +17,17 @@ int main()
     {
         for(j=1;j<=n-i;j++)
         {
-            if(a[j]<a[j+1])
+            //if(a[j]<a[j+1])
+            if(a[j]>a[j+1])
             {
                 t=a[j];
                 a[j]=a[j+1];
-                a[j+1]=a[j];
+                a[j+1]=t;
             }
         }
     }
 
-    printf("The numbers array is : ");
+    printf("The numbers array is: ");
     for(i=1; i<=n; i++)
     {
         printf("%d ",a[i]);
